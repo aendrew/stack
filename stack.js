@@ -1,4 +1,6 @@
-function stack() {
+/*jshint -W004*/
+
+function stack(){
   var stack = {},
       size = [1280, 720],
       fontSize = 32,
@@ -229,4 +231,23 @@ function stack() {
   d3.rebind(stack, dispatch, "on");
 
   return stack;
+}
+
+// RequireJS config
+
+if (typeof define === 'function') {
+  require.config({
+    paths: {
+      d3: 'bower_components/d3/d3.js'
+    }
+  });
+
+  define(
+    'stack',
+    ['d3', 'exports'],
+    function(d3, exports){
+      exports.stack = stack;
+      window.stack = undefined;
+    }
+  );
 }
