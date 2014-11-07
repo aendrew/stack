@@ -1,0 +1,26 @@
+{
+  "name": "stack",
+  "version": "1.0.0",
+  "description": "A fork of mbostock/stack.",
+  "main": "stack.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aendrew/stack.git"
+  },
+  "keywords": [
+    "stack",
+    "presentation",
+    "user",
+    "interaction",
+    "mobile"
+  ],
+  "author": "Ændrew Rininsland, Mike Bostock",
+  "license": "LICENSE",
+  "bugs": {
+    "url": "https://github.com/aendrew/stack/issues"
+  },
+  "homepage": "https://github.com/aendrew/stack"
+}
